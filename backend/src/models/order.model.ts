@@ -1,5 +1,5 @@
 import { Schema, Types, model } from "mongoose";
-import { Food, FoodSchema } from "./food.model";
+import { Prod, ProdSchema } from "./prod.model";
 import { OrderStatus } from "../constants/order_status";
 
 export interface LatLng{
@@ -15,14 +15,14 @@ export const LatLngSchema = new Schema<LatLng>(
 );
 
 export interface OrderItem {
-    food: Food;
+    prod: Prod;
     price: number;
     quantity: number;
 }
 
 export const OrderItemSchema = new Schema<OrderItem>(
     {
-        food: {type: FoodSchema, required: true},
+        prod: {type: ProdSchema, required: true},
         price: {type: Number, required: true},
         quantity: {type: Number, required: true}
     }
