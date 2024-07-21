@@ -76,8 +76,8 @@ const getReceiptHtml = function (order: Order) {
               item =>
                 `
               <tr>
-              <td>${item.food.name}</td>
-              <td>$${item.food.price}</td>
+              <td>${item.prod.name}</td>
+              <td>$${item.prod.price}</td>
               <td>${item.quantity}</td>    
               <td>$${item.price.toFixed(2)}</td>
               </tr>
