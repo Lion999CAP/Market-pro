@@ -1,6 +1,7 @@
 {
   "name": "foodmine",
   "version": "1.0.0",
+  "type": "module",
   "engines": {
     "node": ">=20 <21"
   },
@@ -14,7 +15,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "dependencies": {
     "cors": "^2.8.5"
+=======
+  "devDependencies": {
+    "@types/node": "^20.14.11"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+>>>>>>> 8d96fb8908fcf4a9317bfa48fb9117c84edeb1a8
   }
 }
